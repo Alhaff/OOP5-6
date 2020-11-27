@@ -21,5 +21,6 @@ int main() {
 	order[2].ChangeDishInfo("Киевский торт", 123.10, DESSERT);
 	Order One("12.7.2021", First, order, 3);
 	One.ShowInfo();
+	return 0;
 }
 
