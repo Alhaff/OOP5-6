@@ -5,7 +5,7 @@ Order::Order() : Date(), Waiter() {
 	dishListSize = 0;
 }
 
-Order::Order(std::string orderTime, Waiter& waiter, Dish* DishList, int dishListSize) : Date(orderTime), Waiter(waiter) {
+Order::Order(std::string orderTime, Waiter& waiter, Dish* DishList, int dishListSize) : Waiter(waiter) {
 	this->DishList = new Dish[dishListSize];
 	this->dishListSize = dishListSize;
 	for (int i = 0; i < dishListSize; i++) {

@@ -18,7 +18,6 @@ Person::Person(Person& OtherPerson) {
 	this->surname = OtherPerson.surname;
 	this->gender = OtherPerson.gender;
 	InitDate(OtherPerson.getBirthday());
-
 }
 
 std::string Person::getName() {

@@ -2,7 +2,7 @@
 
 Waiter::Waiter() : Person(), JobEvaluation(), Date() { }
 
-Waiter::Waiter(Person& person, JOB_EVALUATION jobEvaluation, std::string date) : Person(person), JobEvaluation(jobEvaluation), Date(date) {
+Waiter::Waiter(Person& person, JOB_EVALUATION jobEvaluation, std::string date) : Person(person), JobEvaluation(jobEvaluation) {
 	InitDate(date);
 }
 
@@ -12,6 +12,7 @@ Waiter::Waiter(Waiter& otherWaiter) {
 	gender = otherWaiter.gender;
 	jobEvalution = otherWaiter.jobEvalution;
 	InitDate(otherWaiter.getStartJobDay());
+	
 }
 
 std::string Waiter::getStartJobDay() {
