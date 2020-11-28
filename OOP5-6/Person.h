@@ -1,7 +1,7 @@
 #ifndef PERSON_H
 #define PERSON_H
 #include "Date.h"
-class Person : protected virtual Date {
+class Person : protected Date {
 protected:
 	std::string name;
 	std::string surname;
