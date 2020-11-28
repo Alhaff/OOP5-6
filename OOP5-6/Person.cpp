@@ -10,7 +10,6 @@ Person::Person(std::string name, std::string surname, std::string gender, std::s
 	this->name = name;
 	this->surname = surname;
 	this->gender = gender;
-
 }
 
 Person::Person(Person& OtherPerson) {

@@ -12,7 +12,6 @@ Waiter::Waiter(Waiter& otherWaiter) {
 	gender = otherWaiter.gender;
 	jobEvalution = otherWaiter.jobEvalution;
 	InitDate(otherWaiter.getStartJobDay());
-	
 }
 
 std::string Waiter::getStartJobDay() {
@@ -33,5 +32,4 @@ void Waiter::ShowInfo() {
 	std::cout << " Пол: " << gender << std::endl;
 	PrintJobEvaluation();
 	std::cout << " Дата принятия на работу: " << getStartJobDay() << std::endl;
-
 }
