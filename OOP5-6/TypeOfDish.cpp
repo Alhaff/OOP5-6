@@ -1,4 +1,4 @@
-#include "TypeOfDish.h"
+ï»¿#include "TypeOfDish.h"
 
 TypeOfDish::TypeOfDish() {
 	typeOfDish = SECOND;
@@ -17,16 +17,16 @@ void TypeOfDish::setTypeOfDish(TYPE_OF_DISH typeOfDish) {
 }
 
 void TypeOfDish::PrintTypeOfDish() {
-	std::cout << " Òèï áëþäà: ";
+	std::cout << " Ð¢Ð¸Ð¿ Ð±Ð»ÑŽÐ´Ð°: ";
 	switch (typeOfDish) {
 	case FIRST:
-		std::cout << " Ïåðâîå";
+		std::cout << " ÐŸÐµÑ€Ð²Ð¾Ðµ";
 		break;
 	case SECOND:
-		std::cout << " Âòîðîå";
+		std::cout << " Ð’Ñ‚Ð¾Ñ€Ð¾Ðµ";
 		break;
 	case DESSERT:
-		std::cout << " Äåññåðò";
+		std::cout << " Ð”ÐµÑÑÐµÑ€Ñ‚";
 		break;
 	}
 	std::cout << std::endl;

@@ -1,4 +1,4 @@
-#include "JobEvaluation.h"
+ï»¿#include "JobEvaluation.h"
 
 JobEvaluation::JobEvaluation() {
 	jobEvalution = WAITER;
@@ -17,19 +17,19 @@ void JobEvaluation::setJobEvaluation(JOB_EVALUATION jobEvalution) {
 }
 
 void JobEvaluation::PrintJobEvaluation() {
-	std::cout << " Ðàçðÿä: ";
+	std::cout << " Ð Ð°Ð·Ñ€ÑÐ´: ";
 	switch(jobEvalution){
 	case JUNIOR_WAITER:
-	std::cout << " Ìëàäøèé îôèöèàíò";
+	std::cout << " ÐœÐ»Ð°Ð´ÑˆÐ¸Ð¹ Ð¾Ñ„Ð¸Ñ†Ð¸Ð°Ð½Ñ‚";
 	    break;
 	case WAITER:
-		std::cout << " Îôèöèàíò";
+		std::cout << " ÐžÑ„Ð¸Ñ†Ð¸Ð°Ð½Ñ‚";
 		break;
 	case SENIOR_WAITER:
-		std::cout << " Ñòàðøèé îôèöèàíò";
+		std::cout << " Ð¡Ñ‚Ð°Ñ€ÑˆÐ¸Ð¹ Ð¾Ñ„Ð¸Ñ†Ð¸Ð°Ð½Ñ‚";
 		break;
 	case HEADWAITER:
-		std::cout << " Ìåòðäîòåëü";
+		std::cout << " ÐœÐµÑ‚Ñ€Ð´Ð¾Ñ‚ÐµÐ»ÑŒ";
 		break;
 	}
 	 std::cout<< std::endl;

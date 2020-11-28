@@ -1,7 +1,7 @@
 #include "Dish.h"
 
 Dish::Dish() : TypeOfDish() {
-	dishName = "Картошка-пюре";
+	dishName = "РљР°СЂС‚РѕС€РєР°-РїСЋСЂРµ";
 	dishCost = 23.50;
 }
 
@@ -27,8 +27,8 @@ void Dish::setDishCost(float dishCost) {
 }
 
 void Dish::PrintDishInfo() {
-	std::cout << " Блюдо: " << dishName << std::endl;
-	std::cout << " Стоимость: " << dishCost << " $" << std::endl;
+	std::cout << " Р‘Р»СЋРґРѕ: " << dishName << std::endl;
+	std::cout << " РЎС‚РѕРёРјРѕСЃС‚СЊ: " << dishCost << " $" << std::endl;
 	PrintTypeOfDish();
 
 }

@@ -35,10 +35,10 @@ public:
 	void setYear(int Year);
 	int getDay();
 	void InitDate(std::string date);
-	//Перевантежений стандартний ввід та вивід (теж оператори просто були створенні до 4 лабораторної роботи)
+	//РџРµСЂРµРІР°РЅС‚РµР¶РµРЅРёР№ СЃС‚Р°РЅРґР°СЂС‚РЅРёР№ РІРІС–Рґ С‚Р° РІРёРІС–Рґ (С‚РµР¶ РѕРїРµСЂР°С‚РѕСЂРё РїСЂРѕСЃС‚Рѕ Р±СѓР»Рё СЃС‚РІРѕСЂРµРЅРЅС– РґРѕ 4 Р»Р°Р±РѕСЂР°С‚РѕСЂРЅРѕС— СЂРѕР±РѕС‚Рё)
 	friend std::ostream& operator<< (std::ostream& out, const Date& Date);
 	friend std::istream& operator>> (std::istream& in, Date& Date);
-	//Перевантажені оператори 
+	//РџРµСЂРµРІР°РЅС‚Р°Р¶РµРЅС– РѕРїРµСЂР°С‚РѕСЂРё 
 	virtual operator std::string();
 	friend bool operator==(const Date& Date1, const Date& Date2);
 	virtual std::string operator+(const std::string& str);

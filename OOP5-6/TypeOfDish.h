@@ -1,4 +1,4 @@
-#ifndef TYPE_OF_DISH_H
+﻿#ifndef TYPE_OF_DISH_H
 #define TYPE_OF_DISH_H
 #include <iostream>
 enum TYPE_OF_DISH {

@@ -1,9 +1,9 @@
-#include "Person.h"
+Ôªø#include "Person.h"
 
 Person::Person() : Date() {
-	this->name = "»‚‡Ì";
-	this->surname = "‘Â‰ÓÓ‚Ë˜";
-	this->gender = "ÃÛÊ˜ËÌ‡";
+	this->name = "–ò–≤–∞–Ω";
+	this->surname = "–§–µ–¥–æ—Ä–æ–≤–∏—á";
+	this->gender = "–ú—É–∂—á–∏–Ω–∞";
 }
 
 Person::Person(std::string name, std::string surname, std::string gender, std::string date) : Date(date) {
@@ -46,10 +46,10 @@ void Person::setGender(std::string gender) {
 
 
 void Person::ShowInfo() {
-	std::cout << " »Ïˇ: " << name << std::endl;
-	std::cout << " ‘‡ÏËÎËˇ: " << surname << std::endl;
-	std::cout << " œÓÎ: " << gender << std::endl;
-	std::cout << " ƒ‡Ú‡ ÓÊ‰ÂÌËˇ:" << getBirthday() << std::endl;
+	std::cout << " –ò–º—è: " << name << std::endl;
+	std::cout << " –§–∞–º–∏–ª–∏—è: " << surname << std::endl;
+	std::cout << " –ü–æ–ª: " << gender << std::endl;
+	std::cout << " –î–∞—Ç–∞ —Ä–æ–∂–¥–µ–Ω–∏—è:" << getBirthday() << std::endl;
 }
 
 std::string Person::getBirthday() {

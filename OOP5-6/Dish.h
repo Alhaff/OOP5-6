@@ -1,4 +1,4 @@
-#ifndef DISH_H
+﻿#ifndef DISH_H
 #define DISH_H
 #include "TypeOfDish.h"
 class Dish : public TypeOfDish {

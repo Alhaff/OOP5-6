@@ -1,4 +1,4 @@
-#ifndef JOB_EVALUTION_H
+﻿#ifndef JOB_EVALUTION_H
 #define JOB_EVALUTION_H
 #include <iostream>
 enum JOB_EVALUATION {

@@ -1,4 +1,4 @@
-#include "Waiter.h"
+ï»¿#include "Waiter.h"
 
 Waiter::Waiter() : Person(), JobEvaluation(), Date() { }
 
@@ -27,9 +27,9 @@ void Waiter::setStartJobDay(int day, int month, int year) {
 }
 
 void Waiter::ShowInfo() {
-	std::cout << " Èìÿ: " << name << std::endl;
-	std::cout << " Ôàìèëèÿ: " << surname << std::endl;
-	std::cout << " Ïîë: " << gender << std::endl;
+	std::cout << " Ð˜Ð¼Ñ: " << name << std::endl;
+	std::cout << " Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: " << surname << std::endl;
+	std::cout << " ÐŸÐ¾Ð»: " << gender << std::endl;
 	PrintJobEvaluation();
-	std::cout << " Äàòà ïðèíÿòèÿ íà ðàáîòó: " << getStartJobDay() << std::endl;
+	std::cout << " Ð”Ð°Ñ‚Ð° Ð¿Ñ€Ð¸Ð½ÑÑ‚Ð¸Ñ Ð½Ð° Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ: " << getStartJobDay() << std::endl;
 }

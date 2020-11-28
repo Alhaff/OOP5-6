@@ -1,4 +1,4 @@
-#ifndef WAITER_H
+﻿#ifndef WAITER_H
 #define WAITER_H
 #include "Person.h"
 #include "JobEvaluation.h"

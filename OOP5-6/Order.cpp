@@ -1,4 +1,4 @@
-#include "Order.h"
+ï»¿#include "Order.h"
 
 Order::Order() : Date(), Waiter() {
 	DishList = nullptr;
@@ -31,12 +31,12 @@ void Order::PrintDishList() {
 }
 
 void Order::ShowInfo() {
-	std::cout << " Èìÿ: " << name << std::endl;
-	std::cout << " Ôàìèëèÿ: " << surname << std::endl;
-	std::cout << " Ïîë: " << gender << std::endl;
+	std::cout << " Ð˜Ð¼Ñ: " << name << std::endl;
+	std::cout << " Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ: " << surname << std::endl;
+	std::cout << " ÐŸÐ¾Ð»: " << gender << std::endl;
 	PrintJobEvaluation();
 	PrintDishList();
-	std::cout << " Äàòà çàêàçà: " << getOrderTime();
+	std::cout << " Ð”Ð°Ñ‚Ð° Ð·Ð°ÐºÐ°Ð·Ð°: " << getOrderTime();
 }
 
 Dish& Order::getDishList(int index) {
