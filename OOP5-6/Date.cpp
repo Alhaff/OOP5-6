@@ -24,8 +24,8 @@ Date::Date(int Day, int Month, int Year) {
 
 				}
 				else {
-					std::cerr << " Íåäîïóñòèìîå çíà÷åíèå äëÿ ìåñÿöà" << std::endl;
-					std::cerr << " Îøèáêà â êîíñòðóêòîðå Date" << std::endl;
+					std::cerr << " ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¼ÐµÑÑÑ†Ð°" << std::endl;
+					std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ Date" << std::endl;
 					this->Month = MinMounth;
 				}
 
@@ -35,22 +35,22 @@ Date::Date(int Day, int Month, int Year) {
 			}
 		}
 		else {
-			std::cerr << " Íåäîïóñòèìîå çíà÷åíèå äëÿ ìåñÿöà" << std::endl;
-			std::cerr << " Îøèáêà â êîíñòðóêòîðå Date" << std::endl;
+			std::cerr << " ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¼ÐµÑÑÑ†Ð°" << std::endl;
+			std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ Date" << std::endl;
 			this->Month = MinMounth;
 		}
 	}
 	else {
-		std::cerr << " Íåêîðåòíîå çíà÷åíèå äíåé â ìåñÿöå" << std::endl;
-		std::cerr << " Îøèáêà â êîíñòðóêòîðå Date" << std::endl;
+		std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð½ÐµÐ¹ Ð² Ð¼ÐµÑÑÑ†Ðµ" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ Date" << std::endl;
 		this->Day = MaxDaysInMonth;
 	}
 	if (Year >= 0) {
 		this->Year = Year;
 	}
 	else {
-		std::cerr << " Íåêîðåòíîå çíà÷åíèå äëÿ ãîäà" << std::endl;
-		std::cerr << " Îøèáêà â êîíñòðóêòîðå Date" << std::endl;
+		std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð³Ð¾Ð´Ð°" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ Date" << std::endl;
 		this->Year = DefaultYear;
 	}
 }
@@ -73,13 +73,13 @@ void Date::InitDate(std::string date) {
 		throw Day;
 	}
 	catch (std::invalid_argument) {
-		std::cerr << "  Îøèáêà ïðåîáðàçîâàíèÿ string â char1" << std::endl;
-		std::cerr << " Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+		std::cerr << "  ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€ÐµÐ¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ð°Ð½Ð¸Ñ string Ð² char1" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 		Day = 31;
 	}
 	catch (std::out_of_range) {
-		std::cerr << "  Îøèáêà ïåðåïîëíåíèå òèïà èíò" << std::endl;
-		std::cerr << " Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+		std::cerr << "  ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿ÐµÑ€ÐµÐ¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ñ‚Ð¸Ð¿Ð° Ð¸Ð½Ñ‚" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 		Day = 31;
 	}
 	catch (int) {
@@ -91,13 +91,13 @@ void Date::InitDate(std::string date) {
 		throw Month;
 	}
 	catch (std::invalid_argument) {
-		std::cerr << "  Îøèáêà ïðåîáðàçîâàíèÿ string â char2" << std::endl;
-		std::cerr << " Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+		std::cerr << "  ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€ÐµÐ¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ð°Ð½Ð¸Ñ string Ð² char2" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 		Month = 1;
 	}
 	catch (std::out_of_range) {
-		std::cerr << "  Îøèáêà ïåðåïîëíåíèå òèïà èíò" << std::endl;
-		std::cerr << " Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+		std::cerr << "  ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿ÐµÑ€ÐµÐ¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ñ‚Ð¸Ð¿Ð° Ð¸Ð½Ñ‚" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 		Month = 1;
 	}
 	catch (int) {
@@ -109,13 +109,13 @@ void Date::InitDate(std::string date) {
 		throw Year;
 	}
 	catch (std::invalid_argument) {
-		std::cerr << "  Îøèáêà ïðåîáðàçîâàíèÿ string â char3" << std::endl;
-		std::cerr << " Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+		std::cerr << "  ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€ÐµÐ¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ð°Ð½Ð¸Ñ string Ð² char3" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 		Year = 2002;
 	}
 	catch (std::out_of_range) {
-		std::cerr << "  Îøèáêà ïåðåïîëíåíèå òèïà èíò" << std::endl;
-		std::cerr << " Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+		std::cerr << "  ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿ÐµÑ€ÐµÐ¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ñ‚Ð¸Ð¿Ð° Ð¸Ð½Ñ‚" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 		Year = 2002;
 	}
 	catch (int) {
@@ -124,32 +124,32 @@ void Date::InitDate(std::string date) {
 
 
 	if (Day < MinDay || Day > MaxDaysInMonth) {
-		std::cerr << " Íåêîðåòíîå çíà÷åíèå äíåé â ìåñÿöå" << std::endl;
-		std::cerr << " Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+		std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð½ÐµÐ¹ Ð² Ð¼ÐµÑÑÑ†Ðµ" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 		Day = MaxDaysInMonth;
 	}
 
 	if (Month < MinMounth || Month > MaxMonthInYear) {
-		std::cerr << " Íåäîïóñòèìîå çíà÷åíèå äëÿ ìåñÿöà" << std::endl;
-		std::cerr << " ÎÎøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+		std::cerr << " ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¼ÐµÑÑÑ†Ð°" << std::endl;
+		std::cerr << " ÐžÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 		Month = MinMounth;
 	}
 	else if (Month == Febrary) {
 		if (Day > MaxDaysInFebrary) {
-			std::cerr << " Íåäîïóñòèìîå çíà÷åíèå äëÿ ìåñÿöà" << std::endl;
-			std::cerr << " Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+			std::cerr << " ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¼ÐµÑÑÑ†Ð°" << std::endl;
+			std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 			Month = MinMounth;
 		}
 		else if (Day == MaxDaysInFebrary && !LeapYearCheck(Year)) {
-			std::cerr << " Íåäîïóñòèìîå çíà÷åíèå äëÿ ìåñÿöà" << std::endl;
-			std::cerr << "Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+			std::cerr << " ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¼ÐµÑÑÑ†Ð°" << std::endl;
+			std::cerr << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 			Month = MinMounth;
 		}
 	}
 
 	if (Year < 0) {
-		std::cerr << " Íåêîðåòíîå çíà÷åíèå äëÿ ãîäà" << std::endl;
-		std::cerr << "Îøèáêà â êîíñòðóêòîðå êëàññà Date ñ ïàðàìåòðîì string" << std::endl;
+		std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð³Ð¾Ð´Ð°" << std::endl;
+		std::cerr << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð² ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€Ðµ ÐºÐ»Ð°ÑÑÐ° Date Ñ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð¼ string" << std::endl;
 		Year = DefaultYear;
 	}
 }
@@ -164,15 +164,15 @@ void Date::setDay(int Day) {
 				this->Day = Day;
 			}
 			else {
-				std::cerr << " Íåêîðåêòíûé ââîä äíÿ" << std::endl;
-				std::cerr << " Îøèáêà â setDay" << std::endl;
+				std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´ Ð´Ð½Ñ" << std::endl;
+				std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² setDay" << std::endl;
 			}
 		}
 		this->Day = Day;
 	}
 	else {
-		std::cerr << " Íåêîðåêòíûé ââîä äíÿ" << std::endl;
-		std::cerr << " Îøèáêà â setDay" << std::endl;
+		std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´ Ð´Ð½Ñ" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² setDay" << std::endl;
 	}
 }
 
@@ -183,8 +183,8 @@ void Date::setMonth(int Month) {
 		this->Month = Month;
 	}
 	else {
-		std::cerr << " Íåêîðåòíîå çíà÷åíèå äíåé â ìåñÿöå" << std::endl;
-		std::cerr << " Îøèáêà â setMonth" << std::endl;
+		std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð½ÐµÐ¹ Ð² Ð¼ÐµÑÑÑ†Ðµ" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² setMonth" << std::endl;
 	}
 }
 
@@ -195,8 +195,8 @@ void Date::setYear(int Year) {
 		this->Year = Year;
 	}
 	else {
-		std::cerr << " Íåêîðåòíîå çíà÷åíèå äëÿ ãîäà" << std::endl;
-		std::cerr << " Îøèáêà â setYear" << std::endl;
+		std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð³Ð¾Ð´Ð°" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð² setYear" << std::endl;
 	}
 
 }
@@ -259,32 +259,32 @@ std::istream& operator>>(std::istream& in, Date& Date) {
 	in.ignore();
 	in >> Date.Year;
 	if (Date.Day < MinDay || Date.Day > MaxDaysInMonth) {
-		std::cerr << " Íåêîðåòíîå çíà÷åíèå äíåé â ìåñÿöå" << std::endl;
-		std::cerr << " Îøèáêà ïðè ââîäå äàííûõ â êëàññ Date" << std::endl;
+		std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð½ÐµÐ¹ Ð² Ð¼ÐµÑÑÑ†Ðµ" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð²Ð²Ð¾Ð´Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² ÐºÐ»Ð°ÑÑ Date" << std::endl;
 		Date.Day = MaxDaysInMonth;
 	}
 
 	if (Date.Month < MinMounth || Date.Month > MaxMonthInYear) {
-		std::cerr << " Íåäîïóñòèìîå çíà÷åíèå äëÿ ìåñÿöà" << std::endl;
-		std::cerr << " Îøèáêà ïðè ââîäå äàííûõ â êëàññ Date" << std::endl;
+		std::cerr << " ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¼ÐµÑÑÑ†Ð°" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð²Ð²Ð¾Ð´Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² ÐºÐ»Ð°ÑÑ Date" << std::endl;
 		Date.Month = MinMounth;
 	}
 	else if (Date.Month == Febrary) {
 		if (Date.Day > MaxDaysInFebrary) {
-			std::cerr << " Íåäîïóñòèìîå çíà÷åíèå äëÿ ìåñÿöà" << std::endl;
-			std::cerr << " Îøèáêà ïðè ââîäå äàííûõ â êëàññ Date" << std::endl;
+			std::cerr << " ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¼ÐµÑÑÑ†Ð°" << std::endl;
+			std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð²Ð²Ð¾Ð´Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² ÐºÐ»Ð°ÑÑ Date" << std::endl;
 			Date.Month = MinMounth;
 		}
 		else if (Date.Day == MaxDaysInFebrary && !Date.LeapYearCheck(Date.Year)) {
-			std::cerr << " Íåäîïóñòèìîå çíà÷åíèå äëÿ ìåñÿöà" << std::endl;
-			std::cerr << " Îøèáêà ïðè ââîäå äàííûõ â êëàññ Date" << std::endl;
+			std::cerr << " ÐÐµÐ´Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¼ÐµÑÑÑ†Ð°" << std::endl;
+			std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð²Ð²Ð¾Ð´Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² ÐºÐ»Ð°ÑÑ Date" << std::endl;
 			Date.Month = MinMounth;
 		}
 	}
 
 	if (Date.Year < 0) {
-		std::cerr << " Íåêîðåòíîå çíà÷åíèå äëÿ ãîäà" << std::endl;
-		std::cerr << " Îøèáêà ïðè ââîäå äàííûõ â êëàññ Date" << std::endl;
+		std::cerr << " ÐÐµÐºÐ¾Ñ€ÐµÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð³Ð¾Ð´Ð°" << std::endl;
+		std::cerr << " ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð²Ð²Ð¾Ð´Ðµ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð² ÐºÐ»Ð°ÑÑ Date" << std::endl;
 		Date.Year = DefaultYear;
 	}
 	return in;
