@@ -1,4 +1,5 @@
-#include "Dish.h"
+﻿#include "Dish.h"
+#include "windows.h"
 
 Dish::Dish() : TypeOfDish() {
 	dishName = "Картошка-пюре";

@@ -2,7 +2,7 @@
 #define ORDER_H
 #include "Waiter.h"
 #include "Dish.h"
-class Order : protected virtual Date, public Waiter {
+class Order :  public  Waiter, protected virtual Date {
 private:
 	Dish* DishList;
 	int dishListSize;
