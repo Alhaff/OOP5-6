@@ -8,19 +8,12 @@ using namespace std;
 int main() {
 	system(" chcp 1251 && cls");
 	Person person((string)"Олександр", (string)"Приходченко", (string)"Мужчина", (string)"11.5.2001");
-	//person.ShowInfo();
-	//cout << endl;
 	Waiter waiter(person, HEADWAITER, (string)"23.2.2012");
-	//waiter.ShowInfo();
-	//cout << endl;
 	Dish First((string)"Борщ", 12.80, FIRST);
-	//First.PrintDishInfo();
-	//cout << endl;
 	Dish order[3];
 	order[0] = First;
 	order[2].ChangeDishInfo("Киевский торт", 123.10, DESSERT);
 	Order One("12.7.2021", waiter, order, 3);
-	//One.ShowInfo();
 	//Демонстрація пізнього зв'язування
 	Person** List1 = new Person*[3];
 	List1[0] = &person;
