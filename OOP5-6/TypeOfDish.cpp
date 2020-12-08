@@ -16,7 +16,7 @@ void TypeOfDish::setTypeOfDish(TYPE_OF_DISH typeOfDish) {
 	this->typeOfDish = typeOfDish;
 }
 
-void TypeOfDish::PrintTypeOfDish() {
+void TypeOfDish::ShowInfo() {
 	std::cout << " Тип блюда: ";
 	switch (typeOfDish) {
 	case FIRST:

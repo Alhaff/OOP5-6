@@ -26,7 +26,7 @@ void Order::setOrderTime(int day, int month, int year) {
 
 void Order::PrintDishList() {
 	for (int i = 0; i < dishListSize; i++) {
-		DishList[i].PrintDishInfo();
+		DishList[i].ShowInfo();
 	}
 }
 

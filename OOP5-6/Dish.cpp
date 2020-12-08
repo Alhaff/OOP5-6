@@ -27,10 +27,10 @@ void Dish::setDishCost(float dishCost) {
 	this->dishCost = dishCost;
 }
 
-void Dish::PrintDishInfo() {
+void Dish::ShowInfo() {
 	std::cout << " Блюдо: " << dishName << std::endl;
 	std::cout << " Стоимость: " << dishCost << " $" << std::endl;
-	PrintTypeOfDish();
+	TypeOfDish::ShowInfo();
 
 }
 
