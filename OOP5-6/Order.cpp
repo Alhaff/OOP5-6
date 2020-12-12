@@ -34,9 +34,10 @@ void Order::ShowInfo() {
 	std::cout << " Имя: " << name << std::endl;
 	std::cout << " Фамилия: " << surname << std::endl;
 	std::cout << " Пол: " << gender << std::endl;
-	PrintJobEvaluation();
+	JobEvaluation::ShowInfo();
 	PrintDishList();
-	std::cout << " Дата заказа: " << getOrderTime();
+	std::cout << " Дата заказа: ";
+	Date::ShowInfo();
 }
 
 Dish& Order::getDishList(int index) {

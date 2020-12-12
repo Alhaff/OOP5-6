@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include "Date.h"
 #include "Person.h"
 #include "Waiter.h"
 #include "Dish.h"
@@ -15,7 +16,7 @@ int main() {
 	order[2].ChangeDishInfo("Киевский торт", 123.10, DESSERT);
 	Order One("12.7.2021", waiter, order, 3);
 	//Демонстрація пізнього зв'язування
-	Person** List1 = new Person*[3];
+	Date** List1 = new Date *[3];
 	List1[0] = &person;
 	List1[1] = &waiter;
 	List1[2] = &One;
@@ -28,13 +29,8 @@ int main() {
 	cout << endl;
 	//Демонстрація ранього зв'язування
 	TypeOfDish Type1(SECOND);
-	TypeOfDish** List2 = new TypeOfDish*[2];
-	List2[0] = &Type1;
-	List2[1] = &First;
-	List2[0]->ShowInfo();
-	cout << endl;
-	List2[1]->ShowInfo();
-	cout << endl;
+	Type1.ShowInfo();
+	First.ShowInfo();
 
 
 	return 0;

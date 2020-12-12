@@ -235,6 +235,10 @@ std::string Date::operator+(const std::string& str) {
 	return this->operator std::string() + str;
 }
 
+void Date::ShowInfo() {
+	std::cout << operator std::string() << std::endl;
+}
+
 Date::~Date() {
 
 }

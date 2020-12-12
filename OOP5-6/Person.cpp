@@ -49,7 +49,8 @@ void Person::ShowInfo() {
 	std::cout << " Имя: " << name << std::endl;
 	std::cout << " Фамилия: " << surname << std::endl;
 	std::cout << " Пол: " << gender << std::endl;
-	std::cout << " Дата рождения:" << getBirthday() << std::endl;
+	std::cout << " Дата рождения: ";
+	Date::ShowInfo();
 }
 
 std::string Person::getBirthday() {

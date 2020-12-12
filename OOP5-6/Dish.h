@@ -12,7 +12,7 @@ public:
 	void setDishName(std::string dishName);
 	float getDishCost();
 	void setDishCost(float dishCost);
-	void ShowInfo();
+	virtual void ShowInfo();
 	void ChangeDishInfo(std::string newDishName, float newDishCost, TYPE_OF_DISH newTypeOfDish);
 };
 #endif

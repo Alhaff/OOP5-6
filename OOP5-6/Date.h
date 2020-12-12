@@ -43,6 +43,7 @@ public:
 	friend bool operator==(const Date& Date1, const Date& Date2);
 	virtual std::string operator+(const std::string& str);
 	friend std::string operator+(std::string str, Date& Date);
+	virtual void ShowInfo();
 public:
 	~Date();
 

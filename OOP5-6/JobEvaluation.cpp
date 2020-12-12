@@ -16,7 +16,7 @@ void JobEvaluation::setJobEvaluation(JOB_EVALUATION jobEvalution) {
 	this->jobEvalution = jobEvalution;
 }
 
-void JobEvaluation::PrintJobEvaluation() {
+void JobEvaluation::ShowInfo() {
 	std::cout << " Разряд: ";
 	switch(jobEvalution){
 	case JUNIOR_WAITER:

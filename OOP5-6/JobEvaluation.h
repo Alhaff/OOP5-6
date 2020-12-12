@@ -15,7 +15,7 @@ public:
 	JobEvaluation(JOB_EVALUATION jobEvaluation);
 	JOB_EVALUATION getJobEvaluation();
 	void setJobEvaluation(JOB_EVALUATION jobEvaluation);
-	void PrintJobEvaluation();
+	virtual void ShowInfo();
 };
 #endif
 

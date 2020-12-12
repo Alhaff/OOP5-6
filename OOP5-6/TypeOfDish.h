@@ -14,6 +14,6 @@ public:
 	TypeOfDish(TYPE_OF_DISH typeOfDish);
 	TYPE_OF_DISH getTypeOfDish();
 	void setTypeOfDish(TYPE_OF_DISH typeOfDish);
-	void ShowInfo();
+	virtual void ShowInfo();
 };
 #endif

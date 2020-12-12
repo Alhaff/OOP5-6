@@ -30,6 +30,7 @@ void Waiter::ShowInfo() {
 	std::cout << " Имя: " << name << std::endl;
 	std::cout << " Фамилия: " << surname << std::endl;
 	std::cout << " Пол: " << gender << std::endl;
-	PrintJobEvaluation();
-	std::cout << " Дата принятия на работу: " << getStartJobDay() << std::endl;
+	JobEvaluation::ShowInfo();
+	std::cout << " Дата принятия на работу: ";
+	Date::ShowInfo();
 }
