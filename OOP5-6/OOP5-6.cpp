@@ -9,7 +9,7 @@ using namespace std;
 int main() {
 	system(" chcp 1251 && cls");
 	Person person((string)"Олександр", (string)"Приходченко", (string)"Мужчина", (string)"11.5.2001");
-	Waiter waiter(person, HEADWAITER, (string)"23.2.2012");
+	Waiter waiter(person, HEADWAITER, (string)"31.s.2012");
 	Dish First((string)"Борщ", 12.80, FIRST);
 	Dish order[3];
 	order[0] = First;

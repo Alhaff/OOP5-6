@@ -1,4 +1,4 @@
-#include "Date.h"
+﻿#include "Date.h"
 #include "Date.h"
 #include <string>
 
@@ -90,8 +90,8 @@ void Date::InitDate(std::string date) {
 		Month = stoi(date.substr(date.find_first_of('.') + 1, date.find_last_of('.') - date.find_first_of('.') + 1));
 		throw Month;
 	}
-	catch (std::invalid_argument) {
-		std::cerr << "  Ошибка преобразования string в char2" << std::endl;
+	catch (std::invalid_argument &exception) {
+		std::cerr << exception.what() << std::endl;
 		std::cerr << " Ошибка в конструкторе класса Date с параметром string" << std::endl;
 		Month = 1;
 	}
@@ -296,9 +296,9 @@ std::istream& operator>>(std::istream& in, Date& Date) {
 
 bool operator==(const Date& Date1, const Date& Date2) {
 	bool temp = false;
-	Date1.Day == Date2.Day ? temp = true : temp = false;
-	Date1.Month == Date2.Month ? temp = true : temp = false;
-	Date1.Year == Date2.Year ? temp = true : temp = false;
+	((Date1.Day == Date2.Day) && !temp )? temp = true : temp = false;
+	((Date1.Month == Date2.Month) && temp) ? temp = true : temp = false;
+	((Date1.Year == Date2.Year) && temp) ? temp = true : temp = false;
 	return temp;
 }
 
